@@ -17,3 +17,12 @@ def test_space_in_string():
     result = no_space(original)
     #assert
     assert expected_output == result
+
+def test_space_in_string_and_on_sides():
+    #act
+    original = "aqua 12 Yes "
+    #arrange
+    expected_output = "aqua12Yes"
+    result = no_space(original)
+    #assert
+    assert expected_output == result
