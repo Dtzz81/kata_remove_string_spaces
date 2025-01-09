@@ -10,19 +10,20 @@ def test_no_space_in_output():
     assert expected_output == result
 
 def test_space_in_string():
-    #act
     original = "awe some"
-    #arrange
     expected_output = "awesome"
     result = no_space(original)
-    #assert
     assert expected_output == result
 
 def test_space_in_string_and_on_sides():
-    #act
     original = "aqua 12 Yes "
-    #arrange
     expected_output = "aqua12Yes"
     result = no_space(original)
-    #assert
+    assert expected_output == result
+
+
+def test_from_codewars():
+    original = "8 j 8   mBliB8g  imjB8B8  jl  B"
+    expected_output = "8j8mBliB8gimjB8B8jlB"
+    result = no_space(original)
     assert expected_output == result
