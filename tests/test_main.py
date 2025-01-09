@@ -5,6 +5,15 @@ def test_no_space_in_output():
     original = "awesome"
     #arrange
     expected_output = "awesome"
-    result = no_space()
+    result = no_space(original)
+    #assert
+    assert expected_output == result
+
+def test_space_in_string():
+    #act
+    original = "awe some"
+    #arrange
+    expected_output = "awesome"
+    result = no_space(original)
     #assert
     assert expected_output == result
