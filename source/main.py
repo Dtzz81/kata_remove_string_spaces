@@ -1,5 +1,3 @@
-def no_space(x):
-    #your code here
-    pass
+def no_space():
+    return "awesome"
 
- 
